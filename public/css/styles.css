@@ -6,25 +6,21 @@ html {
 }
 
 h1 {
-  color: rgb(163, 92, 229);
+  color: #fff;
   padding: 10px;
-}
-
-.batchdetails {
-  color: #00204a;
 }
 
 .box {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   max-width: 400px;
   margin: 50px auto;
-  background: rgb(163, 92, 229);
+  background: rgb(198, 205, 212);
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 #heading {
-  background-color:rgb(163, 92, 229);
+  background-color: rgb(124, 124, 221);
   text-align: center;
 }
 
@@ -32,13 +28,21 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgb(163, 92, 229);
+  border-bottom: 1px solid #F1F1F1;
 }
 
 .item:last-child {
   border-bottom: 0;
 }
 
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
 
 p {
   margin: 0;
@@ -53,22 +57,23 @@ form.item {
   margin-left: 20px;
 }
 
-button {
+.item button {
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
   border-color: transparent;
   background-color: rgb(83, 83, 228);
   color: #fff;
   font-size: 30px;
+  padding-bottom: 6px;
   border-width: 0;
 }
 
 input[type="text"] {
-  margin-left: 40%;
   /* text-align: center; */
   height: 60px;
   top: 10px;
-  padding: 5px;
-  margin: 5px;
-  color: #A683E3;
+  border: none;
   background: transparent;
   font-size: 20px;
   font-weight: 200;
@@ -77,11 +82,15 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
+  width: 100%;
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #733cd1;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
 }
 
+
 ::placeholder {
+  width: 100%;
+  padding-left: 60px;
   text-decoration: #00204a;
   color: rgba(0, 0, 0, 0.698);
   opacity: 1;
@@ -94,7 +103,6 @@ footer {
   left: 0;
   bottom: 5%;
   width: 100%;
-  text-align: center;
 }
 
 * a{
