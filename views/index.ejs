@@ -1,52 +1,56 @@
 <%- include("header") -%>
 
-<div class=" text-center">
-  <div class="container p-3 w-100">
-      <h1 class="mt-5 mb-4">Add Student Details</h1>
-  
-      <form class="mt-2" action="/" method="POST">
-          <div class="row mt-5 justify-content-center d-flex">
-                  <input type="text" class="form-control" name="name" placeholder="Full Name" 
-                  autocomplete="off" required>
-
-                  <input type="text" class="form-control" name="email" placeholder="Enter Email Id"
-                  autocomplete="off" required>
-
-              
-                  <input type="text" class="form-control" name="mobileNo" placeholder="Enter Mobile Number" 
-                  autocomplete="off" required>
-
-              
-                  <input type="text" class="form-control" name="gender" placeholder="Enter Gender" 
-                  autocomplete="off" required>
-
-              
-                  <input type="text" class="form-control" name="age" placeholder="Enter Age"
-                  autocomplete="off" required>
-
-              
-                  <input type="text" class="form-control" name="paymentStatus" placeholder="Enter Payment Status"  
-                  autocomplete="off"   required>
-
-              
-                  <input type="text" class="form-control" name="month" placeholder="Enter Month to start from" 
-                  autocomplete="off"  required>              
-              
-                <br>
-                <div class="batchdeails">
-                  Select Batch:  <br> 1) 6-7 AM <br> 2) 7-8 AM <br> 3) 8-9 AM <br> 4) 5-6 PM <br> <br>
-                </div>
-                  <input type="text" class="form-control" name="batch" placeholder="Enter Batch Timming"
-                       >
-              </div>
-          </div>
-
-          <div class="justify-content-center d-flex mt-4">
-              <button id="publishBtn" class="btn btn-primary w-25 py-2">Submit</button>
-          </div>
-      </form>
-
+<div class="cotainer-sm col-lg-12 col-sm-12">
+  <div class="box" id="heading">
+    <h1><b> Immortal Yoga Classess </b></h1>
   </div>
-</div>
+
+  <div class="box">
+    <form class="" action="/" method="POST">
+        <div class="item">
+          <input type="text" class="form-control" name="name" placeholder="Full Name" 
+          autocomplete="off" required> <br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="email" placeholder="Email Id"
+          autocomplete="off" required> <br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="mobileNo" placeholder="Mobile Number" 
+            autocomplete="off" required> <br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="gender" placeholder="Gender" 
+            autocomplete="off" required> <br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="age" placeholder="Age"
+                  autocomplete="off" required> <br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="paymentStatus" placeholder="Payment Status"  
+                  autocomplete="off"   required> <br>
+        </div>
+        
+        <div class="item">
+          <input type="text" class="form-control" name="month" placeholder="Month to Start From" 
+          autocomplete="off"  required><br>
+        </div>
+
+        <div class="item">
+          <input type="text" class="form-control" name="batch" placeholder="Select Batch" 
+          autocomplete="off"  required><br>
+        </div>
+
+      <div class="item" style="background-color: #E4E9FD;">
+        <button type="submit" style="width: 400px; border-radius: 1%;"><b> Submit </b></button>
+      </div>
+    </form>
+  </div>
 </div>
 <%- include("footer") -%>
