@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect('mongodb+srv://admin:123@cluster0.mri1gyk.mongodb.net/yogaclass', {useNewUrlParser : true})
+mongoose.connect('mongodb://localhost:27017/yogaformdetails', {useNewUrlParser : true})
 
 const itemsSchema = {
     name: String,
